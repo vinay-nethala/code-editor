@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Editor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Code Editor</h1>
+  </header>
+  <div class="container">
+    <div data-test-id="editor-container" class="editor-section">
+      <div class="editor-wrapper">
+        <div class="line-numbers" id="line-numbers"></div>
+        <div data-test-id="editor-input" contenteditable="true" class="editor-input" role="textbox" aria-multiline="true"></div>
+      </div>
+    </div>
+    <div data-test-id="event-dashboard" class="dashboard-section">
+      <h3>Event Dashboard</h3>
+      <div data-test-id="event-log-list" class="event-log"></div>
+    </div>
+  </div>
+  <footer class="status-bar">
+    <span id="cursor-pos">Ln 1, Col 1</span>
+    <span id="line-count">1 lines</span>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
