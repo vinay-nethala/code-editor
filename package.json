@@ -1,0 +1,19 @@
+{
+  "name": "code-editor",
+  "version": "1.0.0",
+  "description": "A browser-based code editor with advanced keyboard handling",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
