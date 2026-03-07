@@ -24,6 +24,14 @@ const debouncedHighlight = debounce(() => {
   // Simulate syntax highlighting
 }, 150);
 
+// Update content and manage history
+function updateContent(newContent) {
+  editorState.undoStack.push(editorState.content);
+  editorState.content = newContent;
+  editorState.redoStack = [];
+  debouncedHighlight();
+}
+
 // Update line numbers
 function updateLineNumbers() {
   const text = editor.textContent;
