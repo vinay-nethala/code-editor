@@ -242,20 +242,7 @@ project-root
 ├── README.md
 │
 └── src
-    │
-    ├── components
-    │   ├── Editor.js
-    │   ├── EventDashboard.js
-    │
-    ├── hooks
-    │   ├── useKeyboardShortcuts.js
-    │   ├── useUndoRedo.js
-    │
-    ├── utils
-    │   ├── debounce.js
-    │
-    ├── App.js
-    └── index.js
+   
 ```
 
 ---
@@ -421,3 +408,4 @@ Potential improvements include:
 This project demonstrates how modern web applications handle **complex keyboard interactions**, **state management**, and **performance optimization**.
 
 By combining event-driven design, state history management, and containerized deployment, the editor provides a scalable foundation for building **IDE-like browser applications and collaborative productivity tools**.
+
